@@ -2,7 +2,7 @@
 // https://codersblock.com/blog/highlight-text-inside-a-textarea/
 
 col_a = [" little girl", " young girl", " little boy", " young boy", " boy ", " little child", " young child", " child ", " kid ", "infant", "preteen", "pre-teen", "shota", " loli ", "toddler", " pedoph", "middle school", "elementary school", "preschool", "high school", "playground", "wee lass", "young lass", "wee lad", "young lad", "primary school", "pre-pubescent", "kindergarten", "young daughter", "young son", "too young", "the baby", " youth ", " youths", / (?:[1-9]|1[0-7])([ -])years?\1old/gi, / (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen) years? old/gi];
-col_b = [" penis", " dick", " cock", " vagina", " pussy", " clit", " breast", " ass ", " cum", " semen", " sex", "masturbate", " suck", "fuck ", "fucking ", " thrust", " tit ", " tits ", "jizz", " anal", " anus ", " hump", " molest", " testicle", "fucks ", " orgasm", " rape ", " rapes ", " raping "];
+col_b = [" penis", " dick", " cock", " vagina", " pussy", " clit", " breast", " ass ", " cum", " semen", " sex", "masturbate", " suck", "fuck ", "fucking ", " moan", " throb", " thrust", " tit ", " tits ", "jizz", " anal", " anus ", " hump", " molest", " testicle", "fucks ", " orgasm", " rape ", " raped ", " rapes ", " raping "];
 
 // yeah, browser sniffing sucks, but there are browser-specific quirks to handle that are not a matter of feature detection
 var ua = window.navigator.userAgent.toLowerCase();
