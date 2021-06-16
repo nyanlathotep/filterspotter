@@ -6,7 +6,7 @@ var col_a = [
   " little boy", " young boy", " boy ",
   " little child", " young child", " child ", " kid ",
   "infant", "preteen", "pre-teen",
-  "shota", " loli ", "toddler", " pedoph",
+  "shota", " loli ", "toddler",
   "middle school", "elementary school", "preschool", "high school",
   "playground",
   "wee lass", "young lass", "wee lad", "young lad",
@@ -14,6 +14,7 @@ var col_a = [
   "young daughter", "young son",
   "too young",
   "the baby", " youth ", " youths",
+  " small child",
   / (?:[1-9]|1[0-7]|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen)([ -])years?\1old/gi];
 var col_b = [
   " penis", " dick", " cock",
@@ -28,9 +29,13 @@ var col_b = [
   "jizz",
   " anal", " anus ", " hump", " molest", " testicle",
   "fucks ", " orgasm", " rape ", " raped ", " rapes ", " raping "];
+var col_star = [
+  " pedoph"
+]
 var bindings = [
   {rules: col_a, cls: 'col-a', title: 'Column A (Age-Related)'},
-  {rules: col_b, cls: 'col-b', title: 'Column B (Sex-Related)'}
+  {rules: col_b, cls: 'col-b', title: 'Column B (Sex-Related)'},
+  {rules: col_star, cls: 'col-star', title: 'Column * (Hits Filter Alone)'}
 ];
 // yeah, browser sniffing sucks, but there are browser-specific quirks to handle that are not a matter of feature detection
 var ua = window.navigator.userAgent.toLowerCase();
@@ -135,7 +140,7 @@ function fill_rules() {
 }
 
 var changelog = [
-  {date: '2021-06-16', items: ['Added buttons to fill help, patterns, and changelog']},
+  {date: '2021-06-16', items: ['Moved " pedoph" to a new column and added " small child"', 'Added buttons to fill help, patterns, and changelog']},
   {date: '2021-06-15', items: ['Brought implementation up to date with the list on https://rentry.co/vfigb']}
 ];
 
