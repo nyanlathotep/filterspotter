@@ -5,17 +5,18 @@
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
   </head>
-  <body>
+  <body> 
+    <div class="topcontrol">
+      <div class="controlbutton" id="help">Help</div>
+      <div class="controlbutton" id="rules">Patterns</div>
+      <div class="controlbutton" id="log">Changelog</div>
+    </div> 
     <div class="container">
-    <div class="backdrop">
-      <div class="highlights"></div>
-    </div>
-    <textarea>Put your text in here to check for filter terms, e.g.:
-You are a high school student in a real analysis class.
-
-Column A terms are blue: infantry, young lady, the babysitter
-Column B terms are orange: cockpit, breastplate, fuck this shit
-    </textarea>
+      <div class="backdrop">
+        <div class="highlights"></div>
+      </div>
+      <textarea id="filter-input">
+      </textarea>
     </div>
   </body>
 </html>
