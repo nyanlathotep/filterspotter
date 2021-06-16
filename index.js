@@ -101,15 +101,19 @@ function fill_text(el, text) {
 var help_text = `Put your text in here to check for filter terms, e.g.:
 You are a high school student in a real analysis class.
 
-Column A terms are blue: infantry, young lady, the babysitter
-Column B terms are orange: cockpit, breastplate, fuck this shit`
+Column A (age-related) terms are blue:
+  infantry, young lady, the babysitter
+Column B (sex-related) terms are orange:
+  cockpit, breastplate, fuck this shit
+
+The filter will say "Uh oh" if terms from both columns are in the last 400 characters, and "AI doesn't know what to say" if they're anywhere in context or if the AI hits the filter.`
 
 function fill_help() {
   fill_text('#filter-input', help_text);
 }
 
 var rules_intro = `* Note that the spacing matters on literal entries (surrounded and separated by |)
-* For regex rules (surrounded by /), you might want to try a regex testing site like regex101.com to test them in specific
+* For regex rules, you might want to try a regex testing site like regex101.com to test them in isolation
 * All rules are case insensitive
 `
 
@@ -128,7 +132,7 @@ function generate_rules() {
     }
     text.push('|'+plain_rules.join('|')+'|');
     for (var re of re_rules) {
-      text.push('/'+re+'/');
+      text.push(re);
     }
     text.push('');
   }
