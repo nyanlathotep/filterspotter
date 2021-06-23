@@ -4,16 +4,16 @@
 var col_a = [
   " little girl", " young girl",
   " little boy", " young boy", " boy ",
-  " little child", " young child", " child ", " kid ",
+  " young child", " child ", " kid ",
   "infant", "preteen", "pre-teen",
-  "shota", " loli ", "toddler",
+  "shota", "loli ", "toddler",
   "middle school", "elementary school", "preschool", "high school",
   "playground",
   "wee lass", "young lass", "wee lad", "young lad",
   "primary school", "pre-pubescent", "kindergarten",
   "young daughter", "young son",
   "too young",
-  "the baby", " youth ", " youths",
+  "the baby", "youth ", "youths",
   " small child",
   "kiddo",
   / (?:[1-9]|1[0-7]|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen)([ -])years?\1old/gi];
@@ -26,9 +26,9 @@ var col_b = [
   "fuck ", "fucking ",
   " moan", " throb",
   " thrust",
-  " tit ", " tits ",
+  " tit ", " tits",
   "jizz",
-  " anal", " anus ", " hump", " molest", " testicle",
+  " anal", " anus", " hump", "molest", " testicle",
   "fucks ", " orgasm", " rape ", " raped ", " rapes ", " raping "];
 var col_star = [
   " pedoph"
@@ -145,7 +145,7 @@ function fill_rules() {
 }
 
 var changelog = [
-  {date: '2021-06-23', items: ['Added "kiddo" (seriously?)']},
+  {date: '2021-06-23', items: ['Removed " little child", changed " loli " -> "loli ", " youth " -> "youth ", " youths" -> "youths", " tits " -> " tits", " anus " -> " anus", " molest" -> "molest"','Added "kiddo" (seriously?)']},
   {date: '2021-06-16', items: ['Moved " pedoph" to a new column and added " small child"', 'Added buttons to fill help, patterns, and changelog']},
   {date: '2021-06-15', items: ['Brought implementation up to date with the list on https://rentry.co/vfigb']}
 ];
