@@ -15,6 +15,7 @@ var col_a = [
   "too young",
   "the baby", " youth ", " youths",
   " small child",
+  "kiddo",
   / (?:[1-9]|1[0-7]|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen)([ -])years?\1old/gi];
 var col_b = [
   " penis", " dick", " cock",
@@ -144,6 +145,7 @@ function fill_rules() {
 }
 
 var changelog = [
+  {date: '2021-06-23', items: ['Added "kiddo" (seriously?']},
   {date: '2021-06-16', items: ['Moved " pedoph" to a new column and added " small child"', 'Added buttons to fill help, patterns, and changelog']},
   {date: '2021-06-15', items: ['Brought implementation up to date with the list on https://rentry.co/vfigb']}
 ];
