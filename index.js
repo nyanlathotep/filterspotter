@@ -110,7 +110,7 @@ Column A (age-related) terms are blue:
 Column B (sex-related) terms are orange:
   cockpit, breastplate, fuck this shit
 
-The filter will say "Uh oh" if terms from both columns are in the last 400 characters, and "AI doesn't know what to say" if they're anywhere in context or if the AI hits the filter.`
+The filter will say "Uh oh" if terms from both columns are in the last 400 characters, "AI doesn't know what to say" if they're anywhere in context, and "Server Error" if the AI hits the filter.`
 
 function fill_help() {
   fill_text('#filter-input', help_text);
@@ -148,7 +148,7 @@ function fill_rules() {
 }
 
 var changelog = [
-  {date: '2021-06-23', items: ['Restructured " n-years-old rules to exclude " [1-17]-years-old"','Removed " little child", changed " loli " -> "loli ", " youth " -> "youth ", " youths" -> "youths", " tits " -> " tits", " anus " -> " anus", " molest" -> "molest"','Added "kiddo" (seriously?)']},
+  {date: '2021-06-23', items: ['Added note about new "Server Error" message for output filter','Restructured " n-years-old rules to exclude " [1-17]-years-old"','Removed " little child", changed " loli " -> "loli ", " youth " -> "youth ", " youths" -> "youths", " tits " -> " tits", " anus " -> " anus", " molest" -> "molest"','Added "kiddo" (seriously?)']},
   {date: '2021-06-16', items: ['Moved " pedoph" to a new column and added " small child"', 'Added buttons to fill help, patterns, and changelog']},
   {date: '2021-06-15', items: ['Brought implementation up to date with the list on https://rentry.co/vfigb']}
 ];
