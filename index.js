@@ -34,7 +34,7 @@ var col_b = [
   " anal", " anus", " hump", "molest", " testicle",
   "fucks ", " orgasm", " rape ", " raped ", " rapes ", " raping "];
 var col_star = [
-  " pedoph"
+  "pedoph"
 ]
 var bindings = [
   {rules: col_a, cls: 'col-a', title: 'Column A (Age-Related)'},
@@ -102,7 +102,9 @@ function fill_text(el, text) {
   handleInput();
 }
 
-var help_text = `Put your text in here to check for filter terms, e.g.:
+var help_text = `Note: I am aware of the recent update regarding the filter, and so far as I have tested, no substantive updates have occurred
+
+Put your text in here to check for filter terms, e.g.:
 You are a high school student in a real analysis class.
 
 Column A (age-related) terms are blue:
@@ -148,6 +150,7 @@ function fill_rules() {
 }
 
 var changelog = [
+  {date: '2021-07-16', items: ['added note about update', 'changed spacing of " pedoph" to "pedoph", note that I am not confident that this is related to the recent announcement about the filter, as I saw no other changes; I think I just inadequately tested its spacing']},
   {date: '2021-06-23', items: ['Added note about new "Server Error" message for output filter','Restructured " n-years-old rules to exclude " [1-17]-years-old"','Removed " little child", changed " loli " -> "loli ", " youth " -> "youth ", " youths" -> "youths", " tits " -> " tits", " anus " -> " anus", " molest" -> "molest"','Added "kiddo" (seriously?)']},
   {date: '2021-06-16', items: ['Moved " pedoph" to a new column and added " small child"', 'Added buttons to fill help, patterns, and changelog']},
   {date: '2021-06-15', items: ['Brought implementation up to date with the list on https://rentry.co/vfigb']}
