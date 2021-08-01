@@ -6,8 +6,106 @@
   </head>
   <body> 
     <div class="message">
-      Filterspotter will no longer work usefully with the new filter.
-      If you still want to use it for some reason, you can find it <a href='old'>here.</a>
-    </div>
+      <p>With Latitude <a href="https://latitude.io/blog/filter-iteration/">launching a new filter</a>&mdash;and
+      this update actually changing something <a href="https://latitude.io/blog/filter-update/">unlike the last time</a>&mdash;Filterspotter
+      will no longer work usefully.
+      If you still want to use it for some reason, you can find it <a href='old/index.html'>here.</a></p>
+      <p>
+        The new filter appears to be a Bayesian or AI classifier, which makes it much
+        harder to characterize than the previous keyword filter.
+        Latitude themselves likely don't know how it really works.
+        The filter message has also been changed to "Uh oh, the AI doesn't know how to handle this situation,"
+        <em>which is an outright lie.</em>
+      </p>
+      <p>
+        I've recieved reports of new false positives,
+        particularly around words suggesting incest, like "mom", and seen these in my own testing.
+        However, I could not say whether this is intentional behavior or a side effect of their training data.
+      </p>
+      <p>
+        For reference, the rules of the last filter as of my latest knowledge are below:
+      </p>
+      <p>Column A ("age-related") terms:</p>
+      <ul>
+        <li class="badge col-a">" little girl"</li>
+        <li class="badge col-a">" young girl"</li>
+        <li class="badge col-a">" little boy"</li>
+        <li class="badge col-a">" young boy"</li>
+        <li class="badge col-a">" boy "</li>
+        <li class="badge col-a">" young child"</li>
+        <li class="badge col-a">" child "</li>
+        <li class="badge col-a">" kid "</li>
+        <li class="badge col-a">"infant"</li>
+        <li class="badge col-a">"preteen"</li>
+        <li class="badge col-a">"pre-teen"</li>
+        <li class="badge col-a">"shota"</li>
+        <li class="badge col-a">"loli "</li>
+        <li class="badge col-a">"toddler"</li>
+        <li class="badge col-a">"middle school"</li>
+        <li class="badge col-a">"elementary school"</li>
+        <li class="badge col-a">"preschool"</li>
+        <li class="badge col-a">"high school"</li>
+        <li class="badge col-a">"playground"</li>
+        <li class="badge col-a">"wee lass"</li>
+        <li class="badge col-a">"young lass"</li>
+        <li class="badge col-a">"wee lad"</li>
+        <li class="badge col-a">"young lad"</li>
+        <li class="badge col-a">"primary school"</li>
+        <li class="badge col-a">"pre-pubescent"</li>
+        <li class="badge col-a">"kindergarten"</li>
+        <li class="badge col-a">"young daughter"</li>
+        <li class="badge col-a">"young son"</li>
+        <li class="badge col-a">"too young"</li>
+        <li class="badge col-a">"the baby"</li>
+        <li class="badge col-a">"youth "</li>
+        <li class="badge col-a">"youths"</li>
+        <li class="badge col-a">" small child"</li>
+        <li class="badge col-a">"kiddo"</li>
+        <li class="badge col-a">" [age (1-17 or word)] year(s) old"</li>
+        <li class="badge col-a">" [age (1-17 or word)]-year(s)-old"</li>
+      </ul>
+      <p>But <em>not</em> for some reason:</p>
+      <ul>
+        <li class="badge col-nope">" [age as digits]-years-old"</li>
+      </ul>
+      <p>Column B ("sex-related") terms:</p>
+      <ul>
+        <li class="badge col-b">" penis"</li>
+        <li class="badge col-b">" dick"</li>
+        <li class="badge col-b">" cock"</li>
+        <li class="badge col-b">" vagina"</li>
+        <li class="badge col-b">" pussy"</li>
+        <li class="badge col-b">" clit"</li>
+        <li class="badge col-b">" breast"</li>
+        <li class="badge col-b">" ass "</li>
+        <li class="badge col-b">" cum"</li>
+        <li class="badge col-b">" semen"</li>
+        <li class="badge col-b">" sex"</li>
+        <li class="badge col-b">"masturbate"</li>
+        <li class="badge col-b">" suck"</li>
+        <li class="badge col-b">"fuck "</li>
+        <li class="badge col-b">"fucking "</li>
+        <li class="badge col-b">" moan"</li>
+        <li class="badge col-b">" throb"</li>
+        <li class="badge col-b">" thrust"</li>
+        <li class="badge col-b">" tit "</li>
+        <li class="badge col-b">" tits"</li>
+        <li class="badge col-b">"jizz"</li>
+        <li class="badge col-b">" anal"</li>
+        <li class="badge col-b">" anus"</li>
+        <li class="badge col-b">" hump"</li>
+        <li class="badge col-b">"molest"</li>
+        <li class="badge col-b">" testicle"</li>
+        <li class="badge col-b">"fucks "</li>
+        <li class="badge col-b">" orgasm"</li>
+        <li class="badge col-b">" rape "</li>
+        <li class="badge col-b">" raped "</li>
+        <li class="badge col-b">" rapes "</li>
+        <li class="badge col-b">" raping "</li>
+      </ul>
+      <p>Tripped the filter alone:</p>
+      <ul>
+        <li class="badge col-star">"pedoph"</li>
+      </ul>
   </body>
 </html>

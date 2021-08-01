@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-  background-color: #333;
+  background-color: #222;
 }
 
 .message {
@@ -12,6 +12,51 @@ body {
   font: 16px/24px 'Open Sans', sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}
+
 a {
   color: #7df;
+}
+
+.badgegroup {
+  overflow: auto;
+  display: block;
+}
+
+.badgetitle {
+  display: block;
+  float: left;
+}
+
+.badge {
+  margin-left: 8px;
+  margin-top: 8px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.col-a {
+  border:2px solid #8A4D14;
+}
+
+.col-b {
+  border:2px solid #00648f;
+}
+
+.col-nope {
+  border:2px solid #666;
+}
+
+.col-star {
+  border:2px solid #007523;
 }
